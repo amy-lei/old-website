@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+
+/* 
+============================================================
+UNIVERSAL PROPERTIES
+============================================================
+*/
+.clr{
+    clear:above;
+}
+.container{
+    display:block; 
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.active{
+    color:red;
+}
+/* 
+============================================================
+FOR STUFF AT THE HEADER
+============================================================
+ */
+header img{
+    float:left;
+    width: 75px;
+    margin: 30px;
+}
+header nav a{
+    float:right;
+    text-decoration:none;
+    font-weight:bold;
+    color:black;
+    margin:15px;
+    margin-top:50px;
+    padding-bottom:10px;
+    border-bottom:2px solid;
+    
+}
+
+header nav a:hover{
+    border-bottom: 2px solid red;
+}
+header nav a:hover{
+    border-bottom: 2px solid red;
+}
+/* 
+============================================================
+FOR STUFF IN THE BODY
+============================================================
+ */
+ 
+/* the intro*/ 
+.intro{
+    margin-left:50px;
+    padding-bottom:100px;
+}
+.introWithName{
+    padding-top:300px;
+    font-size:80px;
+}
+.introLatter{
+    padding-bottom:150px;
+}
+.intro em{
+    color: red;
+    font-style: normal;
+}
+
+/* senior tshirt grid */
+.gallery_seniorT{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.galleryImage{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.seniorT1{
+    grid-column-start:1;
+    grid-column-end: 6;
+    grid-row-start:1;
+    grid-row-end:7;
+}
+#seniorT2{
+    grid-column-start:6;
+    grid-column-end: 8;
+    grid-row-start:1;
+    grid-row-end:8;
+    writing-mode:vertical-lr;
+}
+#seniorT3{
+    margin-left:50px;
+    grid-column-start:6;
+    grid-column-end: 7;
+    grid-row-start:1;
+    grid-row-end:8;
+}
+/* seed to stem grid */
+.gallery_sts{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.galleryImage{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.sts1{
+    grid-column-start:1;
+    grid-column-end: 6;
+    grid-row-start:1;
+    grid-row-end:7;
+}
+.sts2{
+    grid-column-start:1;
+    grid-column-end: 6;
+    grid-row-start:7;
+    grid-row-end:10;
+}
+.sts3{
+    grid-column-start:6;
+    grid-column-end: 7;
+    grid-row-start:1;
+    grid-row-end:8;
+    writing-mode: vertical-lr;
+}
+.sts4{
+    margin-left:50px;
+    grid-column-start:6;
+    grid-column-end: 7;
+    grid-row-start:1;
+    grid-row-end:8;
+
+}
+
+.sts4{
+    margin-left:50px;
+    grid-column-start:6;
+    grid-column-end: 7;
+    grid-row-start:1;
+    grid-row-end:8;
+
+}
+/* stuyhacks grid */
+.gallery_stuyhack{
+    margin-top:190px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.galleryImage{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.stuyhack1{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:3;
+    grid-row-end:9;
+}
+.stuyhack2{
+    grid-column-start:4;
+    grid-column-end: 10;
+    grid-row-start:1;
+    grid-row-end:9;
+}
+.stuyhack4{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:9;
+    grid-row-end:10;
+}
+
+.stuyhack5{
+    grid-column-start:4;
+    grid-column-end:8;
+    grid-row-start:9;
+    writing-mode: vertical-lr;
+}
+.stuyhack6{
+    margin-left:50px;
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:9;
+}
+
+
+/* 
+============================================================
+FOR STUFF IN THE FOOTER
+============================================================
+ */
+ 
+footer{
+    background-color:#000;
+    padding:75px;
+    margin-top:100px;
+    color:white;
+    font-weight:bold;
+}
+
+.leftFooter{
+    float:left;
+}
+.rightFooter{
+    float:right;
+}
+.footerNav a{
+    text-decoration:none;
+    align:right;
+    color:white;
+}
+.footerNav{
+    list-style-type:none;
+    margin-bottom:25px;
+}
+    

@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* 
+============================================================
+UNIVERSAL PROPERTIES
+============================================================
+*/
+.clr{
+    clear:above;
+}
+.container{
+    display:block; 
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* 
+============================================================
+FOR STUFF AT THE HEADER
+============================================================
+ */
+header img{
+    float:left;
+    width: 75px;
+    margin: 30px;
+}
+header nav a{
+    float:right;
+    text-decoration:none;
+    font-weight:bold;
+    color:black;
+    margin:15px;
+    margin-top:50px;
+    padding-bottom:10px;
+    border-bottom:2px solid;
+    
+}
+
+/* 
+============================================================
+FOR STUFF IN THE BODY
+============================================================
+ */
+ 
