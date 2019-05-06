@@ -102,7 +102,7 @@ FOR STUFF IN THE BODY
 #seniorT3{
     margin-left:50px;
     grid-column-start:6;
-    grid-column-end: 7;
+    grid-column-end: 8;
     grid-row-start:1;
     grid-row-end:8;
 }
@@ -141,20 +141,12 @@ FOR STUFF IN THE BODY
 .sts4{
     margin-left:50px;
     grid-column-start:6;
-    grid-column-end: 7;
+    grid-column-end: 8;
     grid-row-start:1;
     grid-row-end:8;
 
 }
 
-.sts4{
-    margin-left:50px;
-    grid-column-start:6;
-    grid-column-end: 7;
-    grid-row-start:1;
-    grid-row-end:8;
-
-}
 /* stuyhacks grid */
 .gallery_stuyhack{
     margin-top:190px;
@@ -197,7 +189,7 @@ FOR STUFF IN THE BODY
 .stuyhack6{
     margin-left:50px;
     grid-column-start:4;
-    grid-column-end:5;
+    grid-column-end:6;
     grid-row-start:9;
 }
 
