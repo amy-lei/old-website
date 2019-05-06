@@ -22,6 +22,18 @@ UNIVERSAL PROPERTIES
 .active{
     color:red;
 }
+.button{
+    padding:10px;
+    margin:auto;
+    background-color:#555555;
+    border: 0px;
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+.button:hover{
+    background-color:red;
+}
 /* 
 ============================================================
 FOR STUFF AT THE HEADER
@@ -145,6 +157,13 @@ FOR STUFF IN THE BODY
     grid-row-start:1;
     grid-row-end:8;
 
+}
+.button{
+    margin-left:50px;
+    margin-top:75px;
+    grid-column-start:6;
+    grid-column-end:8;
+    grid-row-start:1;
 }
 
 /* stuyhacks grid */
