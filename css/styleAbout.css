@@ -17,7 +17,7 @@ body{
 .clr{
     clear:both;
 }
-.container:not(footer){
+.container{
     display:block; 
     width: 80%;
     margin-left:auto;
