@@ -113,7 +113,7 @@ FOR STUFF IN THE BODY
 /* BIO IMAGE*/
 #portrait{
     position:relative;
-    top:-100px;
+    /* top:-100px; */
     
     float:left;
     padding:50px;
