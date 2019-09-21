@@ -2,116 +2,205 @@
 <html>
     <head>
         <title>Amy Lei</title>
-        <meta name="description" content="Amy Lei Personal Website">
         <meta name="keywords" content="personal website, portfolio, design">
         <link rel="stylesheet" type ="text/css" href="css/styleIndex.css">
+        <meta name="description" content="Amy Lei Personal Website">
         <link rel="icon" href="images/favicon.PNG">
         
     </head>
     
-    <body>
-        <div class="container">
-           
-            <!-- HEADER -->
-            <header>
-                    <img src="images/personalLogo.png">
-                    <nav>
-                        <a href="about.html">About Me</a>
-                        <a class="active" href="index.html">Portfolio</a>
-                    </nav>
-            </header>
-
-
-            <!-- GREETING -->
-            <div class="intro">
-                <h1 class="introWithName"><em>Hello,</em> I'm Amy Lei—</h1>
-                <h1 class="introLatter">an aspiring programmer and graphic designer.</h1>
-            </div>
-            
-            <!-- PORTFOLIO -->
-            
-                            <!-- SENIOR TSHIRT -->
-            <div class="gallery_seniorT">
-                <figure class="galleryItem seniorT1">
-                    <img  class="galleryImage" src="images/senior_tshirt.JPG" alt="seniorT-shirt">
-                </figure>
-                <h2 id="seniorT2"> 
-                    Senior T-Shirt Design
-                    <em> —2019</em>
-                </h2>
-                <p id="seniorT3"> 
-                    This design encapsulates the essence of my four years at Stuyvesant High School.
-                </p>
-            </div>
-                            <!-- SEED TO STEM -->
-            <div class="gallery_sts">
-                <figure class="galleryItem sts1">
-                    <img  class="galleryImage" src="images/sts_logoDisplay.jpg" alt="sts_logo">
-                </figure>
-
-                <figure class="galleryItem sts2">
-                    <img  class="galleryImage" src="images/sts_website.PNG" alt="sts_website">
-                </figure>
-                <h2 class="sts3"> 
-                    Seed to STEM 
-                    <em> —2018</em>
-                </h2>
-                <p class="sts4">
-                    This logo embodied the mission of Seed to STEM: spark creativity in children through STEM. <br>
-                    
-                </p>
-                <br>
-                <a class="button"
-                   href="https://seedtostemorg.wixsite.com/sprouts"
-                   target="_blank"
-                   >
-                    See more 
-                </a>
-            </div>
-                            <!-- STUY HACKS -->
-            <div class="gallery_stuyhack">
-                <!-- <figure class="galleryItem stuyhack1"> -->
-                    <!-- <img  class="galleryImage" src="images/stuyhacks_banner.png" alt="stuyhack_banner"> -->
-                <!-- </figure> -->
-                <figure class="galleryItem stuyhack2">
-                    <img  class="galleryImage" src="images/stuyHacks_poster0.jpg" alt="stuyhack_poster">
-                </figure>
-                <figure class="galleryItem stuyhack1">
-                    <img  class="galleryImage" src="images/stuyHacks_poster1.jpg" alt="stuyhack_poster">
-                </figure>
-                <figure class="galleryItem stuyhack4">
-                    <img  class="galleryImage" src="images/stuyHacks_tshirt.JPG" alt="stuyhack_shirt">
-                </figure>
+    <body class="preload">
+        <div id="container">
+           <div id="home">
+               <!-- HEADER -->
+                <ul id="home_nav">
+                   <li>
+                       <a class="home_nav-opt active" href="#home">Home</a>
+                   </li>
+                   <li>
+                       <a class="home_nav-opt" href="#about_anchor">About Me</a>
+                   </li>
+                   <li>
+                       <a class="home_nav-opt" href="#portfolio_anchor">Portfolio</a>
+                   </li>
+                </ul>
                 
-                <h2 class="stuyhack5">
-                    StuyHacks
-                    <em> —2018</em>
-                </h2>
-                <p class="stuyhack6">
-                    Stuyhacks was where I first brought my love for computer science and for art together.
-            </div>
-        </div> <!--container-->
-        
-        <footer>
-        <div class="leftFooter">
-            <p>&copy;2019 Amy Lei </p>
-            <p>Web developer | Graphic Designer</p>
-        </div>
-        <div class="rightFooter">
-        
-            <ul class="footerNav">
-                <li>
-                    <a class="active" href="index.html">Portfolio</a>
-                </li>
-            <li>
-                    <a href="about.html">About Me</a>
-            </li>
-            
-            </ul>
-        </div>
-        </footer>
-    </body>
+               <!-- GREETING -->
+               <h1 id="home_intro">
+                   Hello there –– <br> my name is Amy Lei,<br>
+                   <span>
+                       an aspiring programmer and graphic designer.
+                    </span>
+                       
+               </h1>
 
+            </div> <!-- End of home -->
+            
+            <h1 class="section-title" id="about_anchor">
+                 About Me 
+            </h1>
+            <div id="about">
+                <img id="about_portrait" src="images/portrait.jpg" alt="Portrait">
+                <h3 id="about_quote">
+                        “When you learn, teach. 
+                        When you get, give.” <br>
+                        — Maya Angelou
+                </h3>
+                <p id="about_description">
+                    I am a student at Massachussetts Institute of Technology
+                    with a strong passion for the intersection of
+                    <strong> technology</strong>,
+                    <strong> art</strong>, and
+                    <strong> social good.   </strong>
+                    <br>
+                    <br>
+                    Through my extracurriculars and academics,
+                    I developed an eagerness to learn and take initiatives.
+                    Through my mentors, I learned to be selfless and genuine, 
+                    and the beauty of paying it forward.
+                    So that is what I hope to do. I hope to bridge these passions
+                    in a way that will make a difference in the world.
+
+                </p>
+            </div>
+            
+            <h1 class='section-title' id="portfolio_anchor">
+                Portfolio
+            </h1>
+            <div id="portfolio">
+                <div id="portfolio_item0" class="portfolio_item">
+                    <div class="portfolio_overlay">
+                        <p>
+                            United East Asian Association––End of the Year Video <br>
+                            <span class="portfolio_overlay_year">
+                            2019
+                            </span>
+                        </p>
+                    </div>
+                    <img class="galleryImage" src="images/funfunsaturday.png" alt="seniorT-shirt">
+                </div>  
+                <div id="portfolio_item1" class="portfolio_item">
+                    <div class="portfolio_overlay">
+                        <p>
+                            Graduation Cap <br>
+                            <span class="portfolio_overlay_year">
+                            2019
+                            </span>
+                        </p>
+                    </div>
+                    <img class="galleryImage" src="images/graduationcap.png" alt="seniorT-shirt">
+                </div>  
+                <div id="portfolio_item2" class="portfolio_item">
+                    <div class="portfolio_overlay">
+                        <p>
+                            StuyHacks VIII Sticker<br>
+                            <span class="portfolio_overlay_year">
+                            2019
+                            </span>
+                        </p>
+                    </div>
+                    <img class="galleryImage" src="images/stuyhacks2019_0.png" alt="seniorT-shirt">
+                </div>  
+                <div id="portfolio_item3" class="portfolio_item">
+                    <div class="portfolio_overlay">
+                        <p>
+                            StuyHacks VIII T-shirt<br>
+                            <spaclass="portfolio_oveay_year">
+                            2019
+                            </span>
+                        </p>
+                    </div>
+                    <img class="galleryImage" src="images/stuyhacks2019_1.png" alt="seniorT-shirt">
+                </div>  
+                <div id="portfolio_item4" class="portfolio_item">
+                    <div class="portfolio_overlay">
+                        <p>
+                            Pegleg Prep <br>
+                            <span class="portfolio_overlay_year">
+                            2019
+                            </span>
+                        </p>
+                    </div>
+                    <img class="galleryImage" src="images/peglegprep.png" alt="seniorT-shirt">
+                </div>  
+                <div id="portfolio_item5" class="portfolio_item">
+                    <div class="portfolio_overlay">
+                        <p>
+                            Senior T-Shirt Design <br>
+                            <span class="portfolio_overlay_year">
+                            2019
+                            </span>
+                        </p>
+                    </div>
+                    <img class="galleryImage" src="images/senior_tshirt.JPG" alt="seniorT-shirt">
+                </div>  
+                        <div id="portfolio_item6" class="portfolio_item">
+                            <div class="portfolio_overlay">
+                                <p>
+                                    Seed to Stem <br>
+                                    <span class="portfolio_overlay_year">
+                                    2018
+                                    </span>
+                                </p>
+                            </div>
+                            <img class="galleryImage" src="images/sts_website.PNG" alt="seniorT-shirt">
+                        </div>  
+                        <div id="portfolio_item7" class="portfolio_item">
+                            <div class="portfolio_overlay">
+                                <p>
+                                    Seed to Stem <br>
+                                    <span class="portfolio_overlay_year">
+                                    2018
+                                    </span>
+                                </p>
+                            </div>
+                            <img class="galleryImage" src="images/sts_logoDisplay.jpg" alt="seniorT-shirt">
+                        </div>
+                <div id="portfolio_item8" class="portfolio_item">
+                    <div class="portfolio_overlay">
+                        <p>
+                            StuyHacks VII<br>
+                            <span class="portfolio_overlay_year">
+                            2018
+                            </span>
+                        </p>
+                    </div>
+                    <img class="galleryImage" src="images/stuyHacks_poster0.jpg" alt="seniorT-shirt">
+                </div>  
+                <div id="portfolio_item9" class="portfolio_item">
+                    <div class="portfolio_overlay">
+                        <p>
+                            StuyHacks VII<br>
+                            <span class="portfolio_overlay_year">
+                            2018
+                            </span>
+                        </p>
+                    </div>
+                    <img class="galleryImage" src="images/stuyHacks_poster1.jpg" alt="seniorT-shirt">
+                </div>    
+
+            </div>
+            
+                    <footer>
+                        <h2>Amy Lei </h2>
+                        <p>Programmer | Graphic Designer</p>
+                    
+                        <ul class="footer_nav">
+                            <li>
+                                <a class="active" href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a class="active" href="#about_anchor">About</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio_anchor">Portfolio</a>
+                            </li>
+                        
+                        </ul>
+                    </footer>
+
+        </div><!-- End of container-->
     
+    </body>
 
 </html>

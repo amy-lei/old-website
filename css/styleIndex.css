@@ -1,10 +1,19 @@
 *{
     margin:0;
     padding:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: helvetica, sans-serif;
     box-sizing:border-box;
+    scroll-behavior: smooth;    
 }
 
+body{
+    width:100vw;
+}
+
+#container{
+    width:65%;
+    margin:auto;
+}
 /* 
 ============================================================
 UNIVERSAL PROPERTIES
@@ -13,204 +22,179 @@ UNIVERSAL PROPERTIES
 .clr{
     clear:above;
 }
-.container{
-    display:block; 
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-}
-.active{
-    color:red;
-}
-.button{
-    padding:10px;
-    margin:auto;
-    background-color:#555555;
-    border: 0px;
-    color:white;
-    font-weight:bold;
-    text-decoration:none;
-}
-.button:hover{
-    background-color:red;
+
+.section-title{
+    font-size: 1.5vw;
+    padding-top: 3vw;
+    border-bottom: 0.15vw solid #1212;  
 }
 /* 
 ============================================================
-FOR STUFF AT THE HEADER
+LANDING
 ============================================================
  */
-header img{
-    float:left;
-    width: 75px;
-    margin: 30px;
+#home{
+    height: 100vh;
+    position: relative;
 }
-header nav a{
+
+#home_nav li{
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+.home_nav-opt{
     float:right;
     text-decoration:none;
     font-weight:bold;
-    color:black;
-    margin:15px;
-    margin-top:50px;
-    padding-bottom:10px;
-    border-bottom:2px solid;
+    color:#121212;
+    margin:2vw 0.25vw 1vw 0;
+    padding: 0.5vw;
     
 }
+#home_intro{
+    position: absolute;
+    top:35vh;
+    font-size:5vh;
+}
+#home_intro span{
+    display:block;
+    width:25vw;
+    text-overflow: nowrap;
+    color: #888;
+    font-weight:300;
+}
 
-header nav a:hover{
-    border-bottom: 2px solid red;
-}
-header nav a:hover{
-    border-bottom: 2px solid red;
-}
-/* 
+/*
+
 ============================================================
 FOR STUFF IN THE BODY
 ============================================================
  */
  
-/* the intro*/ 
-.intro{
-    margin-left:50px;
-    padding-bottom:100px;
-}
-.introWithName{
-    padding-top:300px;
-    font-size:80px;
-}
-.introLatter{
-    padding-bottom:150px;
-    /* font-size: 34px; */
-}
-.intro em{
-    color: red;
-    font-style: normal;
+
+#about{
+    height:90vh;   
+    display: grid;
+    grid-gap: 0.5vw;
+    grid-template-columns: repeat(10, 1fr);    
+    grid-template-rows: repeat(20, 2vw);    
 }
 
-/* senior tshirt grid */
-.gallery_seniorT{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+#about_quote{
+    grid-column: 1 / 6;
+    grid-row: 4/ 5;
+    align-self: end;
+    font-size: 1.25vw;
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 1em;
+    border-left: 0.15em solid black;
 }
-.galleryImage{
+#about_portrait{
+    grid-column: 6 / 11;
+    grid-row: 4 / 15;
+    object-fit: cover;
     width:100%;
     height:100%;
-    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    
+}
+#about_description{
+    grid-column: 1 / 5;
+    grid-row: 6 / 16;
+    font-size: 1.25vw;
+    font-weight:300;
+    line-height:1.5em;
+}
+/* ===========
+Portfolio
+=============*/
+#portfolio{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(50,5vh);
+    grid-gap: 1vh;
+}
+.portfolio_item{
+    position: relative;
+}
+.portfolio_overlay{
+    transition: .5s ease;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    height:100%;
+    width:100%;
+    text-align: center;
+    color:white;
+    font-size:1.5vw;
+    font-weight:500;
+}
+.portfolio_overlay_year{
+    font-size:2.5vw;
+    font-weight: 800;
 }
 
-.seniorT1{
-    grid-column-start:1;
-    grid-column-end: 6;
-    grid-row-start:1;
-    grid-row-end:7;
+.portfolio_item:hover .portfolio_overlay{
+    opacity: 1;
 }
-#seniorT2{
-    grid-column-start:6;
-    grid-column-end: 8;
-    grid-row-start:1;
-    grid-row-end:8;
-    writing-mode:vertical-lr;
-}
-#seniorT3{
-    margin-left:50px;
-    grid-column-start:6;
-    grid-column-end: 8;
-    grid-row-start:1;
-    grid-row-end:8;
-}
-/* seed to stem grid */
-.gallery_sts{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-}
+
 .galleryImage{
+    transition: 0.1s;
+    object-fit: cover;
     width:100%;
     height:100%;
-    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
-.sts1{
-    grid-column-start:1;
-    grid-column-end: 6;
-    grid-row-start:1;
-    grid-row-end:7;
-}
-.sts2{
-    grid-column-start:1;
-    grid-column-end: 6;
-    grid-row-start:7;
-    grid-row-end:10;
-}
-.sts3{
-    grid-column-start:6;
-    grid-column-end: 7;
-    grid-row-start:1;
-    grid-row-end:8;
-    writing-mode: vertical-lr;
-}
-.sts4{
-    margin-left:50px;
-    grid-column-start:6;
-    grid-column-end: 8;
-    grid-row-start:1;
-    grid-row-end:8;
-
-}
-.button{
-    margin-left:50px;
-    margin-top:75px;
-    grid-column-start:6;
-    grid-column-end:8;
-    grid-row-start:1;
+#portfolio_item0{
+    grid-column: 1 / 2;
+    grid-row: 2 / 9;
+    filter: saturate(1.1);
 }
 
-/* stuyhacks grid */
-.gallery_stuyhack{
-    margin-top:190px;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-}
-.galleryImage{
-    width:100%;
-    height:100%;
-    object-fit: cover;
+#portfolio_item1 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 13;
 }
 
-.stuyhack1{
-    grid-column-start:1;
-    grid-column-end: 4;
-    grid-row-start:3;
-    grid-row-end:9;
-}
-.stuyhack2{
-    grid-column-start:4;
-    grid-column-end: 10;
-    grid-row-start:1;
-    grid-row-end:9;
-}
-.stuyhack4{
-    grid-column-start:1;
-    grid-column-end: 4;
-    grid-row-start:9;
-    grid-row-end:10;
+#portfolio_item2 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 20;
 }
 
-.stuyhack5{
-    grid-column-start:4;
-    grid-column-end:8;
-    grid-row-start:9;
-    writing-mode: vertical-lr;
+#portfolio_item3 {
+    grid-column: 2 / 3;
+    grid-row: 13 / 20;
+    filter: saturate(1.5);
 }
-.stuyhack6{
-    margin-left:50px;
-    grid-column-start:4;
-    grid-column-end:6;
-    grid-row-start:9;
+#portfolio_item4 {
+    grid-column: 1 / 2;
+    grid-row: 20 / 27;
+}
+#portfolio_item5 {
+    grid-column: 2 / 3;
+    grid-row: 20 / 30;
+}
+#portfolio_item6 {
+    grid-column: 1 / 2;
+    grid-row: 27 / 35;
+}
+#portfolio_item7 {
+    grid-column: 2 / 3;
+    grid-row: 30 / 38;
+}
+#portfolio_item8 {
+    grid-column: 1 / 2;
+    grid-row: 35 / 49;
+}
+#portfolio_item9 {
+    grid-column: 2 / 3;
+    grid-row: 38 / 52;
 }
 
 
@@ -221,26 +205,34 @@ FOR STUFF IN THE FOOTER
  */
  
 footer{
-    background-color:#000;
-    padding:75px;
+    border-top: 0.1vh solid #999;
+    padding:5vw 0  5vw 0;
     margin-top:100px;
-    color:white;
-    font-weight:bold;
+    color:#000;
+    height: 30vh;
+    font-size: 2.5vh;
+}
+footer p, .footer_nav a{
+    font-size: 2vh;
+}
+.footer_nav{
+    margin: 0.5vw 0 1vw 0;
+    list-style: none;
+    padding: 1vw 0 1vw 0;
 }
 
-.leftFooter{
-    float:left;
+.footer_nav li{
+    display: inline;
 }
-.rightFooter{
-    float:right;
+
+.footer_nav a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 0.75vw;
 }
-.footerNav a{
-    text-decoration:none;
-    align:right;
-    color:white;
+a{
+    transition: 0.5s ease;
 }
-.footerNav{
-    list-style-type:none;
-    margin-bottom:25px;
+a:hover{
+    color: #DAA520;
 }
-    
