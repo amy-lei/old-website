@@ -8,11 +8,13 @@
 
 body{
     width:100vw;
+    /* background: url(../images/node_background.svg); */
 }
 
 #container{
     width:65%;
     margin:auto;
+    height: 100vh;
 }
 /* 
 ============================================================
@@ -64,9 +66,19 @@ LANDING
     color: #888;
     font-weight:300;
 }
+#home_image{
+    position: absolute;
+    top: 25vh;
+    left: 35vw;
+}
+
+#logo{
+    position: absolute;
+    top: 4vh;
+    right: 0;
+}
 
 /*
-
 ============================================================
 FOR STUFF IN THE BODY
 ============================================================
